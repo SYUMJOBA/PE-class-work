@@ -1,0 +1,139 @@
+Every second of your life you are ander attack
+Bilions of bacteria, viruses and fungi are trying to make you theyr home
+
+So our body developed a super complex little army with guards, soldiers, wapon factories and intelligent soldiers that prevents us from dying 
+
+for this video, let's assume that the immune system has 12 different jobs:
+__________________________________________________________________________________
+-	1. Communicate		5. Cause inflammation	9.  Strategic decisions
+-	2. Kill enemies		6. Activate other cells	10. remember enemies
+-	3. stanby mode		7. produce antibodies	11. mark/disable enemies 1
+-	4. fight worms		8. kill infected cells	12. mark/disable enemies 2
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+and let's assume that it has 21 different cells and protein forces adn that these cells have up to 4 different jobs
+
+_____________________________________________________________________________________________________________________________________________________
+-	Macrophage		Neutrophil		Natural Killer Cell	Complement		Mast Cell		Monocyte
+	1-2-5-6			6-2			1-2			11			1-4-5-6			3-2-9
+
+-	Follicular Dend. Cell	Dendritic Cell		Memory helper T Cell	Bosophil		Eosinophil		Virgin Helper T Cell	
+	6			6-5			1-10-6			6-5-4			5-4-6			3-6
+
+-	Helper T Cell		Mem Helper Stem T Cell	Virgin Killer T Cell	Antibodies		Killer T Cell		Memory Killer T Cell
+	1-6			1-10			3-8			12			8			10-8
+
+-	Virgin B Cell		B Cell			Memory B Cell		Memory B Stem Cell	Mem Killer Stem Cell
+	7-3			7-6			10-7			10-7			10-8
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+Now let's make this understandable, first by illustrating the functions with colors
+	1  - Beije
+	2  - red
+	3  - light blue
+	4  - grass green
+	5  - orange
+	6  - yellow
+	7  - electric blue
+	8  - pink
+	9  - white
+	10 - purple
+	11 - dark water-green
+	12 - bright water-gree
+
+and maybe illustrating the cells with the corresponding colours
+	The central colour represents the main function of the cell, the surrounding ones, represent secondary duties
+
+	#make some python code snippets to represent all the different cells
+
+
+so what happens in the case of an infection?
+	Let's suppose that in a normal day, a wild rusty nail appears and you cut yourself
+	so the first barrier of the immune syestem is breached: the immune system
+	Nearby bacteria seize on the opportunity and enter your wound, using your body recources and doubling theyr number every 20 minutes.
+
+	Initially they are unnoticed and harmless, 
+	but at some point when they reach large numbers, 
+	they start damaging the body by changing the eveironment around them
+	the immune system has to stop them as fast as possible.
+
+	initially, macrophages intervene, they are large cells (21 micrometres) that have the only purpose of killing
+	they can devour up to 100 intruders each, the swallow the enemy as a whole and then trap it inside a membrane
+	after that, the enemy si broken down by enzimes and so killed.
+
+	On top of that they cause inflammation, 
+	and inflamation means breaching the blood vessel 
+	so it releases water facilitating the movoment in the battlefield.
+	This is noticed as a very mild swelling.
+
+	If they need packup, they release a messenger protein that comunicates urgency and location.
+	The Neutrophiles patrolling the blood vessel leave theyr patrol state and go straight to the battlefield.
+	Neutrophiles are cells that fight and kill so furiously that kill even other cells in the process.
+	On top of that Neutrophiles generate barriers that trap and kill bacteria.
+	
+	They are so deadly, that they evolved to commit suicide after 5 days to prevent from making too much damage.
+	
+	if this is not enough, the brain of the immune system kicks in
+	Macrophages comunicate with a dendritic cell, so that they start collecting sample pieces from the enemy.
+	They rip them into pieces and present the parts on their outer layer.
+	
+	Now the dentritic Cell makes a crucial decision, 
+	should they call an army of anti-viral forces that eradicate infected cells 
+	or an army of bacteria killers? In this case he will call anti-bacteria forces, wich is what we're dealing with now.
+	
+	Multiple Dendritic Cells are called and later, in about a day they travel to the closest lymph node.
+	Here, bilions of helper and killer T cells are waiting to be activated. 
+
+	When T cells are born, they go trough a difficult and complicated training process and only a quarter survives
+	The survivor cells are equipped with a specific set-up, and they are born as virgin, and they look for a tendritic cell wich has a complementary set-up,
+	the one shown on the Dendritic cell's membrane wich are the parts of the intruder basically.
+
+	When finally finds one, a chan reaction takes place, the helper T cell is activated and it quickly duplicates thousands of times.
+
+	- Some become MEMRY T cells and stay in the pymph node
+	- Some travel to the field to help out
+	- Some travel to the center of the lymph node to activate a very powerful weapons factor, B cells
+
+	B cells work like the T cells, they work upon activation and they are born with a specific setup,
+	when a B cell and a T cell with complementary setups meet and touch, a chain reaction takes place.
+	The B cell dublicates incredibly fast and starts producing milions of weapons. 
+	They work so hard that they would literally die from exhaustion very fast.
+	Here helper T cells play another important role, stimulating the hard working factories and telling them to not stop. 
+	
+	Exhausting to the last the cells instead of making new ones make sure that they die when the infection is over,
+	So that the body doesn't lose energy or hurt itself. 
+
+	But what is produced by the B cell? You've heard of them of course, ANTIBODIES.
+	Little proteins that are engineered to bind to the surface of the specific intruder.
+	There are even different kind of antiboies that have slightly different jobs.
+	The helper T cells tell the plasma cells wich type is needed the most in this particular invasion.
+	Milions of them flood the blood and saturate the body.
+	
+	Meanwhile the situation at the battlefield is getting worse, the intruders have multiplied and start hurting the body.
+	Guard and attack cells fight hard but also die in the process, helper T cells keeps them alive and active a bit longer but they alone are not enought to overwhelm the intruder bacteria.
+	But now the second line of defense arrives, bilions of antibodies flood the battlefield and disable lots of intruders,
+	Making them helpless or killing them in the process.
+
+	They even stick to the bacteria and make them an easy target,
+	their back is built to connect to killer cells, so they can connect and kill the enemy more easily. 
+	Macrofages are especially good at nomming up the bacteria wich antibodies have attached to.
+
+	Now everything shifts and the balance is restored to original.
+	At this point, milions of body cells already died.
+	No big deal tho because the losses are quickly replenished.
+	No that the battle is over the cells commit suicide since they don't receive anymore the constant signal from helper T cells, because they are useless now.
+	
+	Some cells stay behind tho, Memory helper T cells and Memory B cells, so that
+	if you'll ever encouner this enemy again, it will be killed even before you'll notice, 
+	since they'll be ready for it. 
+
+	This was an extremely simplified version of the immune system.
+	We ingored a lot of chemestry behind what happens and other general players.
+	For now we wanted to focus on the key concepts.
+
+	Life is awfully complicated, but if we take time to undertand it, we'll encounter endless wonders and great beauty.
+
+
+
+	
