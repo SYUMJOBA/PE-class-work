@@ -6,8 +6,4 @@
 - small library that includes one function for each cell to draw, example: I call DrawHelperTCell(PositionX, PositionY) and the turtle will draw the cell for me
 - complete the "Immune system 1 notes.txt" file
 
-- manda sto cazzo di foglio per l'assemblea alla spadaro
-- fai i copmleiti per domani (inglese, finisci il testo sul sistema immunitario, fisica, inglese)
-
-
-- the final result needs to render an entire image as the one shown here as " scheme.png "
+- the final result needs to render an entire image as the one shown here as "complete scheme.png"
