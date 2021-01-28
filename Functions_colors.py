@@ -2,32 +2,78 @@
 #the colors here have to be set in hexadecimal
 
 #here are all the colours set in the dictionary for every single funcion of the twelve
-colours = {"Communicate" : "#f5be8b",
-    "Kill enemies" : "#f93571",
-    "Standby mode" : "#72cadc",
-    "Fight worms" : "#b5cd64",
-    "Cause inflammation" : "#ec725d",
-    "Activate other cells" : "#f0bb4d",
-    "Produce antibodies" : "#00a1de",
-    "Kill infected cells" : "#f685cc",
-    "Strategic decisions" : "#e8dbd8",
-    "Remember enemies" : "#8850b5",
-    "Mark/disable enemies 1" : "#4bb4be",
-    "Mark/disable enemies 2" : "#06e0cb"
+colours = {"Communicate" : "#e1af5a",
+    "Kill enemies" : "#e43d51",
+    "Standby mode" : "#8acede",
+    "Fight worms" : "#9db34a",
+    "Cause inflammation" : "#ec794a",
+    "Activate other cells" : "#f7cd47",
+    "Produce antibodies" : "#399ae5",
+    "Kill infected cells" : "#e473a5",
+    "Strategic decisions" : "#ffffff",
+    "Remember enemies" : "#8253a2",
+    "Mark/disable enemies 1" : "#63a99f",
+    "Mark/disable enemies 2" : "#57fbcd"
 }
 
-#here there are the cells functions all stored in a dictionary
+#here there are the cells functions all stored in a dictionary, it's not yet completed
 
 cellsFunction = {"Macrophage" : ["Kill enemies", "Cause inflammation", "Activate other cells", "Communicate"],
     "Neutrofile" : ["Kill enemies", "Activate other cells"],
-    "Natural killer cell" : ["Kill enemies" , "communicate"]
+    "Natural killer cell" : ["Kill enemies" , "communicate"],
     "Complement" : ["Mark/disable enemies 1"],
-    "Mast cell" : [""],
-    "Monocyte" : [""],
+    "Mast cell" : [],
+    "Monocyte" : [],
     "Follicular dendritic cell" : ["Activate other cells"],
-    "Dendritic cell" : ["Activate other cells", "Cause inflammation"]
+    "Dendritic cell" : ["Activate other cells", "Cause inflammation"], # why does the video chow it defferently as [6, 9]???
+    "Memory helper T cell" : [],
+    "Bosophil" : [],
+    "Eosinophil" : [],
+    "Virgin helper T cell" : ["Standby mode", "Activate other cells"],
+    "Helper T cell" : [],
+    "Memory helper stem T cell" : [],
+    "Virgin killer T cell" : ["Standby mode", "Kill infected cells"],
+    "Antibodies" : ["Mark/disable enemies 2"],
+    "Killer T cell" : ["Kill infected cells"],
+    "Memory killer T cell" : [],
+    "Virgin B cell" : [],
+    "B cell" : ["Produce antibodies", "Activate other cells"],
+    "Memory B cell" : ["Produce antibodies" , "Remember enemies"],
+    "Memory B stem cell" : [],
+    "Memory killer stem cell" : []
+
+    #Kurzgesagt if you are seeing this, just know that I'm getting pretty confused ... 😅 and suprisingly emojis can be put in comments, I'm gonna take a break
+
 }
 
+UnDoneYet = 60
+cellsSizes = {"Macrophage" : 60,
+    "Neutrofile" : UnDoneYet,
+    "Natural killer cell" : UnDoneYet,
+    "Complement" : UnDoneYet,
+    "Mast cell" : UnDoneYet,
+    "Monocyte" : UnDoneYet,
+    "Follicular dendritic cell" : UnDoneYet,
+    "Dendritic cell" : UnDoneYet, # why does the video chow it defferently as [6, 9]???
+    "Memory helper T cell" : UnDoneYet,
+    "Bosophil" : UnDoneYet,
+    "Eosinophil" : UnDoneYet,
+    "Virgin helper T cell" : UnDoneYet,
+    "Helper T cell" : UnDoneYet,
+    "Memory helper stem T cell" : UnDoneYet,
+    "Virgin killer T cell" : UnDoneYet,
+    "Antibodies" : UnDoneYet,
+    "Killer T cell" : UnDoneYet,
+    "Memory killer T cell" : UnDoneYet,
+    "Virgin B cell" : UnDoneYet,
+    "B cell" : UnDoneYet,
+    "Memory B cell" : UnDoneYet,
+    "Memory B stem cell" : UnDoneYet,
+    "Memory killer stem cell" : UnDoneYet
+
+    #Kurzgesagt if you are seeing this, just know that I'm getting pretty confused ... 😅 and suprisingly emojis can be put in comments
+
+}
 
 #CELL SCHEME
     #	_____________________________________________________________________________________________________________________________________________________
