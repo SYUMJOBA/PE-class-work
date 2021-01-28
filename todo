@@ -2,7 +2,7 @@ UNDONE:
 
 INITIALIZED:
 - a folder with a sample photo for every schematic representation for each cell
-- small library that includes in a dictionary all the immune system colours associated to the functions, according to the notes.txt file present in the directory
+- small library that includes in a dictionary all the immune system colours associated to the functions, according to the notes.txt file present in the directory #IT'S CALLED Function_colours.py and it will be used for all cell characteristics
 - small library that includes one function for each cell to draw, example: I call DrawHelperTCell(PositionX, PositionY) and the turtle will draw the cell for me, it will be called "TurtleCells"
 
 
