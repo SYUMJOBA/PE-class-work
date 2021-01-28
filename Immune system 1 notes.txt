@@ -4,29 +4,30 @@ Bilions of bacteria, viruses and fungi are trying to make you theyr home
 So our body developed a super complex little army with guards, soldiers, wapon factories and intelligent soldiers that prevents us from dying 
 
 for this video, let's assume that the immune system has 12 different jobs:
-__________________________________________________________________________________
--	1. Communicate		5. Cause inflammation	9.  Strategic decisions
--	2. Kill enemies		6. Activate other cells	10. remember enemies
--	3. stanby mode		7. produce antibodies	11. mark/disable enemies 1
--	4. fight worms		8. kill infected cells	12. mark/disable enemies 2
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	__________________________________________________________________________________
+	-	1. Communicate		5. Cause inflammation	9.  Strategic decisions
+	-	2. Kill enemies		6. Activate other cells	10. remember enemies
+	-	3. stanby mode		7. produce antibodies	11. mark/disable enemies 1
+	-	4. fight worms		8. kill infected cells	12. mark/disable enemies 2
+	‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 
 and let's assume that it has 21 different cells and protein forces adn that these cells have up to 4 different jobs
 
-_____________________________________________________________________________________________________________________________________________________
--	Macrophage		Neutrophil		Natural Killer Cell	Complement		Mast Cell		Monocyte
-	1-2-5-6			6-2			1-2			11			1-4-5-6			3-2-9
+CELL SCHEME:
+	_____________________________________________________________________________________________________________________________________________________
+	-	Macrophage					Neutrophil				Natural Killer Cell		Complement		Mast Cell			Monocyte
+		1-2-5-6						6-2						1-2						11				1-4-5-6				3-2-9
 
--	Follicular Dend. Cell	Dendritic Cell		Memory helper T Cell	Bosophil		Eosinophil		Virgin Helper T Cell	
-	6			6-5			1-10-6			6-5-4			5-4-6			3-6
+	-	Follicular Dend. Cell		Dendritic Cell			Memory helper T Cell	Bosophil		Eosinophil			Virgin Helper T Cell	
+		6							6-5						1-10-6					6-5-4			5-4-6				3-6
 
--	Helper T Cell		Mem Helper Stem T Cell	Virgin Killer T Cell	Antibodies		Killer T Cell		Memory Killer T Cell
-	1-6			1-10			3-8			12			8			10-8
+	-	Helper T Cell				Mem Helper Stem T Cell	Virgin Killer T Cell	Antibodies		Killer T Cell		Memory Killer T Cell
+		1-6							1-10					3-8						12				8					10-8
 
--	Virgin B Cell		B Cell			Memory B Cell		Memory B Stem Cell	Mem Killer Stem Cell
-	7-3			7-6			10-7			10-7			10-8
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	-	Virgin B Cell				B Cell					Memory B Cell			Memory B Stem Cell					Mem Killer Stem Cell
+		7-3							7-6						10-7					10-7								10-8
+	‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 Now let's make this understandable, first by illustrating the functions with colors
 	1  - Beije
