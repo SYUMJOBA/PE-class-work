@@ -1,9 +1,17 @@
-- use turtle graphics
-- find a way to draw circular sector
+UNDONE:
+
+INITIALIZED:
 - a folder with a sample photo for every schematic representation for each cell
-- small library that shortens the turtle graphics functions, so that it will be easier and faster to code, called "FastTurtle"
 - small library that includes in a dictionary all the immune system colours associated to the functions, according to the notes.txt file present in the directory
-- small library that includes one function for each cell to draw, example: I call DrawHelperTCell(PositionX, PositionY) and the turtle will draw the cell for me
-- complete the "Immune system 1 notes.txt" file
+- small library that includes one function for each cell to draw, example: I call DrawHelperTCell(PositionX, PositionY) and the turtle will draw the cell for me, it will be called "TurtleCells"
+
+
+DONE:
+- use turtle graphics
+- complete the "Immune system 1 notes.txt" file #DONE
+- small library that shortens the turtle graphics functions, so that it will be easier and faster to code, called "ft" wich stands for "fast turtle" #I WON'T USE IT
+- find a way to draw circular sector
 
 - the final result needs to render an entire image as the one shown here as "complete scheme.png"
+
+
