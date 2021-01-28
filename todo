@@ -1,9 +1,12 @@
 UNDONE:
+- [not crucial] add the possibility to draw cells on command through the console window
+- bug fix needed in function TurtleCells.drawCell line 72 -:- 74. The function needs to close if the selected cell doesn't have any colors to be represented and be available again later but without blocking the console window
 
 INITIALIZED:
 - a folder with a sample photo for every schematic representation for each cell
 - small library that includes in a dictionary all the immune system colours associated to the functions, according to the notes.txt file present in the directory #IT'S CALLED Function_colours.py and it will be used for all cell characteristics
-- small library that includes one function for each cell to draw, example: I call DrawHelperTCell(PositionX, PositionY) and the turtle will draw the cell for me, it will be called "TurtleCells"
+- small library that includes one function for each cell to draw, example: I call DrawHelperTCell(PositionX, PositionY) and the turtle will draw the cell for me, it will be called "TurtleCells" #Did a general function that can be called to draw whatever tyoe of cell is desired, I want to create other function to draw some other groups like antibodies or to draw bacteria somehow
+
 
 
 DONE:

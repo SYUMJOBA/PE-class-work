@@ -1,12 +1,20 @@
 #this is the definitve program that should include all libs
+import random
 import TurtleCells
+TurtleCells.SetBGColor("black")
 
-TurtleCells.setSpeed("fastest")
 
-TurtleCells.drawCell("Macrophage")
-TurtleCells.drawCell("Macrophage", pos= [100, 200], rotation= 0)
-TurtleCells.drawCell("Macrophage", pos= [-150, 200], rotation= 0)
-TurtleCells.drawCell("Macrophage", pos= [100, -100], rotation= 0)
+TurtleCells.drawCell("Natural killer cell")
+TurtleCells.drawCell("Macrophage", pos= [200, 100])
+TurtleCells.drawCell("Follicular dendritic cell", pos=[200, 200])
+TurtleCells.drawCell("Neutrofile", pos = [-100, 0])
+TurtleCells.drawCell("Mast cell")
+TurtleCells.drawCell("Macrophage", pos= [-70, -100])
+for x in range(0, 30):
+    a = random.choice([n for n in range(-400, 400)])
+    b = random.choice([n for n in range(-300, 300)])
+    TurtleCells.drawCell("Antibodies", pos= [ a , b ])
+
 
 TurtleCells.move(400, 400)
 TurtleCells.finish()

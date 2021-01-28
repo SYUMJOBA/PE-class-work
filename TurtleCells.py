@@ -67,9 +67,13 @@ def drawCell(type, pos = [0, 0], scale = 1, rotation = "None"):
 
     #memorizing the local functions of the cell type
     LocalCellFunctions = Functions_colors.cellsFunction[type]
+
+    #checks if there are colors to be printed, if there are not, it will terminate the function
+    if len(LocalCellFunctions) == 0:
+        print("The selceted cell: '" + type + "' does not have any functions yet associated")
+        return 0
     
-    #the wideness of each circular sectors
-    radial_angle = 360 / (len(LocalCellFunctions)-1)
+    #the wideness of each circular sectors, calculated only if it can be
     Cell_radius = Functions_colors.cellsSizes[type]
 
     #Basically here I tell the code that ONLY if a new position is defined it has to go to new certain positions, else it will automatically draw from where it was
@@ -84,18 +88,20 @@ def drawCell(type, pos = [0, 0], scale = 1, rotation = "None"):
     if rotation != "None":
         t.setheading(rotation)
 
-    for x in range(1, len(LocalCellFunctions)):
-        #this chunk of code constructs a circular sector
-        t.color(Functions_colors.colours[LocalCellFunctions[x]]) #here it changes color depending on the function progressively, notice that x is used to loop trough everything
-        t.begin_fill()
-        t.forward(Cell_radius*scale)
-        t.left(90)
-        t.circle(Cell_radius*scale, radial_angle)
-        t.left(90)
-        t.forward(Cell_radius*scale)
-        t.end_fill()
-        t.left(180)
-    
+    if len(LocalCellFunctions) > 1:
+        radial_angle = 360 / (len(LocalCellFunctions)-1)
+        for x in range(1, len(LocalCellFunctions)):
+            #this chunk of code constructs a circular sector
+            t.color(Functions_colors.colours[LocalCellFunctions[x]]) #here it changes color depending on the function progressively, notice that x is used to loop trough everything
+            t.begin_fill()
+            t.forward(Cell_radius*scale)
+            t.left(90)
+            t.circle(Cell_radius*scale, radial_angle)
+            t.left(90)
+            t.forward(Cell_radius*scale)
+            t.end_fill()
+            t.left(180)
+
     CentralCircleWidth = 0.65    #in order for the central circle to be printed smaller inside the entire cellular area this value exists so:
                                 #in order to calculate the raius of the circle, we multipy the entire radius by this constant, nontheless, this value is less than zero because is reduces it.
 
@@ -120,3 +126,6 @@ def move(posX, posY):
 
 def setSpeed(speed):
     t.speed(speed)
+
+def SetBGColor(color):
+    turtle.bgcolor(color)
