@@ -60,17 +60,29 @@ def drawMacrophage(posX=0, posY=0, scale=1):
 #I'll try making a better function here
 #here the code works pretty in a complex shape ... basically the turtle loops trough the cell's characteristics to design it, sector by sector.
 #then it will make the central cell role and that's it!
-def drawCell(type, posX = 0, posY = 0, scale = 1):
+def drawCell(type, pos = [0, 0], scale = 1, rotation = "None"):
+
+    #pos[0] is considered X
+    #pos[1] is considered Y
+
     #memorizing the local functions of the cell type
     LocalCellFunctions = Functions_colors.cellsFunction[type]
     
     #the wideness of each circular sectors
     radial_angle = 360 / (len(LocalCellFunctions)-1)
     Cell_radius = Functions_colors.cellsSizes[type]
-    t.penup()
-    t.goto(posX, posY)
-    t.pendown()
+
+    #Basically here I tell the code that ONLY if a new position is defined it has to go to new certain positions, else it will automatically draw from where it was
+    #pos[0] is considered X
+    #pos[1] is considered Y
+
+    if pos != [0, 0]:
+        t.penup()
+        t.goto(pos[0], pos[1])
+        t.pendown()
     
+    if rotation != "None":
+        t.setheading(rotation)
 
     for x in range(1, len(LocalCellFunctions)):
         #this chunk of code constructs a circular sector
