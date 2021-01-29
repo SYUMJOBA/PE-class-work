@@ -66,8 +66,8 @@ cellsSizes = {"Macrophage" : 60,
     "Killer T cell" : UnDoneYet,
     "Memory killer T cell" : UnDoneYet,
     "Virgin B cell" : UnDoneYet,
-    "B cell" : UnDoneYet,
-    "Memory B cell" : UnDoneYet,
+    "B cell" : 75,
+    "Memory B cell" : 75,
     "Memory B stem cell" : UnDoneYet,
     "Memory killer stem cell" : UnDoneYet
 
