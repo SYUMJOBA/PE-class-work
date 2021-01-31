@@ -1,21 +1,29 @@
-import TurtleCells
+import menuFunctions
 
 
 #Welcoming of the user in the program
 print("Welcome to the controllable immune system scheme drawer!")
 print("Type 'help' for a quick list of commands", end = "\n\n")
-
+scale = int(input("Please enter a certain scale, the default is 1: "))
 
 #Initializing the program for real
 while True:
     x = input("Awaiting input: ")
 
     if x == "help" or x == "Help":
-        print("This is the help session")
+        menuFunctions.PrintHelpingMenu()
         print()
+    elif x == "SetBGColor":
+        menuFunctions.SetBGColor()
     elif x == "Exit" or x == "exit":
         print("Exiting the program")
         break
+    elif x == "SetSpeed":
+        menuFunctions.setSpeed()
+    elif x == "Undo" or x  == "undo":
+        menuFunctions.TurtleUndo()
+    elif x == "MakeCell":
+        menuFunctions.MakeCell(scale)
     else:
         print("Command typed appeared to be inexistent or unknown")
 
