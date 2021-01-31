@@ -2,7 +2,19 @@
 
 import TurtleCells
 
+#This function gets called when tabbing is necessary
+def tab(OccupiedSpace = 0, ShouldSpace = 20, charToUse = " "):
+    #ShouldSpace indicates the space occupied by the word plus the space indicated by the spaces that there should be after the word
+    #tabbing is the final result of spaces
+    #OccupiedSpace is the space already occupied by the word
+    tabbing = ""
+    for n in range(0, ShouldSpace-OccupiedSpace, 1):
+        tabbing = tabbing + charToUse
+    return tabbing
+
 def PrintHelpingMenu():
+    print("------COMMAND LIST-----------------------------------------------")
+
     print("__GENERAL_PRINCIPAL_COMMANDS: ___________")
     print(" Type: 'SetBGColor' to set a background colour")
     print(" Type: 'MakeCell' to print a cell on the screen")
@@ -28,6 +40,7 @@ def PrintHelpingMenu():
     print(" Type: 'Down' to land the pen on the paper")
     print(" Type: 'Left' to turn the pen left")
     print(" Type: 'Right' to turn the pen right")
+    print("-----------------------------------------------------------------")
 
 def SetBGColor():
     color = input("enter the color here: ")
@@ -50,3 +63,24 @@ def MakeCell(SelectedScale):
     else:
         print("Please retry and enter a valid Cell type")
         print()
+
+def ListCellTypes():
+    print("------CELL LISTING--------------------------")
+    print("The registered cells are all the following: ")
+    for key in TurtleCells.Functions_colors.cellsFunction:
+        print(" " + key)
+
+def ListCellsWithFunctions():
+    print("_Cell_Listing_with_functions____________________________________________________________________________________________________________________________________|")
+    print("________________________________________________________________________________________________________________________________________________________________|")
+    count = 0
+    for key in TurtleCells.Functions_colors.cellsFunction:
+        count += 1
+        print(str(count) + tab(len(str(count)) , 5) + "|" + key + tab(len(key), 30), end = "|")
+        for function in TurtleCells.Functions_colors.cellsFunction[key]:
+            print(function + tab(len(function), 30), end = "|")
+        print()
+        print(tab(ShouldSpace = 5) + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|")
+
+    print("     |__________________________________________________________________________________________________________________________________________________________|")
+    print()

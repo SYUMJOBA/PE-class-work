@@ -107,12 +107,12 @@ def drawCell(type, pos = [0, 0], scale = 1, rotation = "None"):
 
     #now the central circle is drawn
     t.penup()
-    t.forward(Cell_radius*CentralCircleWidth)
+    t.forward(Cell_radius*CentralCircleWidth*scale)
     t.color(Functions_colors.colours[LocalCellFunctions[0]])
     t.pendown()
     t.left(90)
     t.begin_fill()
-    t.circle(Cell_radius*CentralCircleWidth)
+    t.circle(Cell_radius*CentralCircleWidth*scale)
     t.end_fill()
     return 0
 

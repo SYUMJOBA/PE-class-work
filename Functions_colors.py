@@ -19,7 +19,7 @@ colours = {"Communicate" : "#e1af5a",
 #here there are the cells functions all stored in a dictionary, it's not yet completed
 
 cellsFunction = {"Macrophage" : ["Kill enemies", "Cause inflammation", "Activate other cells", "Communicate"],
-    "Neutrofile" : ["Kill enemies", "Activate other cells"],
+    "Neutrofil" : ["Kill enemies", "Activate other cells"],
     "Natural killer cell" : ["Kill enemies" , "Communicate"],
     "Complement" : ["Mark/disable enemies 1"],
     "Mast cell" : [],
@@ -48,13 +48,13 @@ cellsFunction = {"Macrophage" : ["Kill enemies", "Cause inflammation", "Activate
 
 UnDoneYet = 60
 cellsSizes = {"Macrophage" : 60,
-    "Neutrofile" : 30,
+    "Neutrofil" : 30,
     "Natural killer cell" : 50,
     "Complement" : UnDoneYet,
     "Mast cell" : UnDoneYet,
     "Monocyte" : UnDoneYet,
     "Follicular dendritic cell" : 40,
-    "Dendritic cell" : UnDoneYet, # why does the video chow it defferently as [6, 9]???
+    "Dendritic cell" : 50, # why does the video show it defferently as [6, 9]???
     "Memory helper T cell" : UnDoneYet,
     "Bosophil" : UnDoneYet,
     "Eosinophil" : UnDoneYet,

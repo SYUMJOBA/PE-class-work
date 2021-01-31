@@ -24,9 +24,14 @@ while True:
         menuFunctions.TurtleUndo()
     elif x == "MakeCell":
         menuFunctions.MakeCell(scale)
+    elif x == "Cell Types":
+        menuFunctions.ListCellTypes()
+    elif x == "Cell Listing":
+        menuFunctions.ListCellsWithFunctions()
     else:
         print("Command typed appeared to be inexistent or unknown")
         print()
+    print()
 
 
 #Ending and goodbying from the program
@@ -40,6 +45,6 @@ print("|_________________________")
 print()
 print("FOR CONTRIBUTION____________________________________________________")
 print("|Project hosted on github: https://github.com/SYUMJOBA/PE-class-work")
-print("____________________________________________________________________")
+print("|___________________________________________________________________")
 print()
 input("Press ENTER to exit the program")
