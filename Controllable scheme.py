@@ -26,6 +26,7 @@ while True:
         menuFunctions.MakeCell(scale)
     else:
         print("Command typed appeared to be inexistent or unknown")
+        print()
 
 
 #Ending and goodbying from the program

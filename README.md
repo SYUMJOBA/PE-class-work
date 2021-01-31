@@ -6,5 +6,6 @@ It's all python turtle graphics because I don't really need performance or anima
 
 This project is inspired by kurzgesagt's video: https://www.youtube.com/watch?v=zQGOcOUBi6s&t=137s on the immune system
 
-NOTE: FILES CODIFICATION HERE IS NOT UTF8, IT'S WINDOWS OCCIDENTAL, if you don't take this note seriously you might have problems with the the python trurtle freezing
+Files are all in UTF8 encoding
+
 
