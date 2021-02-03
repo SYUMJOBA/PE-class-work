@@ -129,3 +129,30 @@ def setSpeed(speed):
 
 def SetBGColor(color):
     turtle.bgcolor(color)
+
+def FloodAntibodies():
+    # this function just floods the world with antibodies by creating many many lines
+    ShouldGoLeft = True
+    ShouldGoRight = False
+
+    t.penup()
+    t.color(Functions_colors.colours["Mark/disable enemies 1"])
+    t.setheading(0)
+    t.goto(-400, 400)
+    for x in range(0, 30):
+        for x in range(0, 60):
+            t.pendown()
+            t.forward(4)
+            t.penup()
+            t.forward(8)
+        t.setheading(-90)
+        t.forward(9)
+
+        if ShouldGoLeft:
+            t.setheading(180)
+            ShouldGoLeft = False
+            ShouldGoRight = True
+        elif ShouldGoRight:
+            t.setheading(0)
+            ShouldGoLeft = True
+            ShouldGoRight = False

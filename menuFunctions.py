@@ -101,7 +101,7 @@ def turtleStartFill():
     TurtleCells.t.begin_fill()
 
 def turtleEndFill():
-    Turtlecells.t.end_fill()
+    TurtleCells.t.end_fill()
 
 def TurtleGoto():
     x = int(input("Enter the X position: "))
@@ -130,3 +130,19 @@ def turtleTurnLeft():
 def turtleTurnRight():
     angle = int(input("Enter the rotation angle value:"))
     TurtleCells.t.right(angle)
+
+
+    #this is an additional set of instructions for other misc functions that can be activated from the user
+def DoRandomTurtleMisc():
+    inputVar = input("Awaiting input for Misc: ")
+    
+    if inputVar == "help" or inputVar == "Help":
+        print()
+        print( "_MISC_HELP__________________________________________________________" )
+        print( "| Type 'Flood antibodies' to flood the screen with small antibodies " )
+        print( "| Type 'help' to show the help tab (well you are watching it now)   " )
+        print( "____________________________________________________________________" )
+    elif inputVar == "Flood antibodies":
+        TurtleCells.FloodAntibodies()
+    else:
+        print("The typed word did not correspond to any command, returning to basic")

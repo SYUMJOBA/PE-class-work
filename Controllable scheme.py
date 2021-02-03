@@ -7,6 +7,8 @@ print("Type 'help' for a quick list of commands", end = "\n\n")
 scale = int(input("Please enter a certain scale, the default is 1: "))
 
 #Initializing the program for real
+#Here the program just keeps asking the user a something to input, and that, if it will match with something of the defined functions, it will do the action connected
+
 while True:
     x = input("Awaiting input: ")
 
@@ -50,6 +52,8 @@ while True:
         menuFunctions.turtleTurnLeft()
     elif x == "Rigth" or x == "right":
         menuFunctions.turtleTurnRight()
+    elif x == "Misc" or "misc":
+        menuFunctions.DoRandomTurtleMisc()
     else:
         print("Command typed appeared to be inexistent or unknown")
         print()

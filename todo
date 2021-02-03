@@ -1,8 +1,8 @@
 UNDONE:
-- algorythms for group representation of the cells, for example an algoryth to flood the scene with antibodies
 
 INITIALIZED:
 - small library that includes in a dictionary all the immune system colours associated to the functions, according to the notes.txt file present in the directory #IT'S CALLED Function_colours.py and it will be used for all cell characteristics #technically the entire structure is done, some look unclear tho.
+- algorythms for group representation of the cells, for example an algoryth to flood the scene with antibodies #ALREADY STARTED IT MY MAKING A FUNCTION THAT FLOODS THE WORLD WITH ANTOBODIES
 
 
 
