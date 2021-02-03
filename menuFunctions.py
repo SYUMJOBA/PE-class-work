@@ -142,7 +142,7 @@ def DoRandomTurtleMisc():
         print( "| Type 'Flood antibodies' to flood the screen with small antibodies " )
         print( "| Type 'help' to show the help tab (well you are watching it now)   " )
         print( "____________________________________________________________________" )
-    elif inputVar == "Flood antibodies":
+    elif inputVar == "Flood antibodies" or inputVar == "flood antibodies":
         TurtleCells.FloodAntibodies()
     else:
         print("The typed word did not correspond to any command, returning to basic")
