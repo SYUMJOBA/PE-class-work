@@ -31,9 +31,9 @@ def PrintHelpingMenu():
     print("__Pen Controls: ___________________")
     print(" Type: 'F' to make the pen go forward")
     print(" Type: 'SH' to set your pen's heading at some degree ")
-    print(" Type: 'C' to chanhe your pen's color")
-    print(" Type: 'Start Fill' to start filling a shape, this works strictly related with t.begin_fil()")
-    print(" Type: 'End Fill' to end filling a shape, this works strictly related with t.begin_fil()")
+    print(" Type: 'C' to change your pen's color")
+    print(" Type: 'Start fill' to start filling a shape, this works strictly related with t.begin_fil()")
+    print(" Type: 'End fill' to end filling a shape, this works strictly related with t.begin_fil()")
     print(" Type: 'Goto' to tell the pen to go to a certain position")
     print(" Type: 'Cir' to begin creating a circle")
     print(" Type: 'Up' to stop the pen from writing")
@@ -84,3 +84,49 @@ def ListCellsWithFunctions():
 
     print("     |__________________________________________________________________________________________________________________________________________________________|")
     print()
+
+def TurtleForward():
+    length = int(input("Enter how forward you want to go: "))
+    TurtleCells.t.forward(length)
+
+def turtleSetheading():
+    angle = int(input("Enter the angle you want to set the pen at: "))
+    TurtleCells.t.setheading(angle)
+
+def turtleSetColor():
+    color = input("Enter the color you want to set for the pen: ")
+    TurtleCells.t.color(color)
+
+def turtleStartFill():
+    TurtleCells.t.begin_fill()
+
+def turtleEndFill():
+    Turtlecells.t.end_fill()
+
+def TurtleGoto():
+    x = int(input("Enter the X position: "))
+    y = int(input("Enter the Y position: "))
+    TurtleCells.t.goto(x, y)
+
+def TurtleDoCircle():
+    radius = int(input("Enter circle radius: "))
+    extent = input("Enter circular angle width: ")
+    if extent == "":
+        extent = 360
+    else:
+        extent = int(extent)
+    TurtleCells.t.circle(radius, extent)
+
+def TurtlePullUp():
+    TurtleCells.t.penup()
+
+def turtlePullDown():
+    TurtleCells.t.pendown()
+
+def turtleTurnLeft():
+    angle = int(input("Enter the rotation angle value: "))
+    TurtleCells.t.left(angle)
+
+def turtleTurnRight():
+    angle = int(input("Enter the rotation angle value:"))
+    TurtleCells.t.right(angle)

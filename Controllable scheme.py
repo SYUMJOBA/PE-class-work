@@ -28,6 +28,28 @@ while True:
         menuFunctions.ListCellTypes()
     elif x == "Cell Listing":
         menuFunctions.ListCellsWithFunctions()
+    elif x == "F" or x == "f": # here begins the turtle direct functions
+        menuFunctions.TurtleForward()
+    elif x == "sh" or x == "SH":
+        menuFunctions.turtleSetheading()
+    elif x == "C" or x == "c":
+        menuFunctions.turtleSetColor()
+    elif x == "Start fill" or x == "start fill":
+        menuFunctions.turtleStartFill()
+    elif x == "End fill" or x == "end fill":
+        menuFunctions.turtleEndFill()
+    elif x == "Goto" or x == "goto":
+        menuFunctions.TurtleGoto()
+    elif x == "Cir" or x == "cir":
+        menuFunctions.TurtleDoCircle()
+    elif x == "Up" or x == "up":
+        menuFunctions.TurtlePullUp()
+    elif x == "Down" or x  == "down":
+        menuFunctions.turtlePullDown()
+    elif x == "Left" or x == "left":
+        menuFunctions.turtleTurnLeft()
+    elif x == "Rigth" or x == "right":
+        menuFunctions.turtleTurnRight()
     else:
         print("Command typed appeared to be inexistent or unknown")
         print()
@@ -43,7 +65,7 @@ print("|Email: syumjoba@gmail.com")
 print("|Instagram: @syumjoba")
 print("|_________________________")
 print()
-print("FOR CONTRIBUTION____________________________________________________")
+print("_FOR CONTRIBUTION___________________________________________________")
 print("|Project hosted on github: https://github.com/SYUMJOBA/PE-class-work")
 print("|___________________________________________________________________")
 print()
