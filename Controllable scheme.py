@@ -60,7 +60,7 @@ while True:
     print()
 
 
-#Ending and goodbying from the program
+#Ending and goodbying from the program, I'll put credits here
 print()
 print("-- Thank you for using my sofware --")
 print("$Coded by John Baxter")

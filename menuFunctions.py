@@ -13,6 +13,7 @@ def tab(OccupiedSpace = 0, ShouldSpace = 20, charToUse = " "):
         tabbing = tabbing + charToUse
     return tabbing
 
+#this is a bunch of text printed out as help, listing commands to corresponding functions. I still have to add the commands to print the text on the screen.
 def PrintHelpingMenu():
     print("------COMMAND LIST-----------------------------------------------")
 
@@ -55,6 +56,8 @@ def TurtleUndo(Times = 1):
     for x in range(0, Times):
         TurtleCells.t.undo()
 
+#this function prints a cell on the screen according to the selected scale (at the opening of the program) and type (selected at the moment of printing). 
+#If there isn't any match with cell types it will just skip everything, print a message that explains the user that the cell type is invalid and exit the function
 def MakeCell(SelectedScale):
     Cell_Type = input("Please enter the Cell Type: ")
     if Cell_Type in TurtleCells.Functions_colors.cellsFunction:
@@ -64,6 +67,7 @@ def MakeCell(SelectedScale):
     else:
         print("Please retry and enter a valid Cell type")
         print()
+
 
 def ListCellTypes():
     print("------CELL LISTING--------------------------")
@@ -139,10 +143,10 @@ def DoRandomTurtleMisc():
     
     if inputVar == "help" or inputVar == "Help":
         print()
-        print( "_MISC_HELP__________________________________________________________" )
-        print( "| Type 'Flood antibodies' to flood the screen with small antibodies " )
-        print( "| Type 'help' to show the help tab (well you are watching it now)   " )
-        print( "____________________________________________________________________" )
+        print( "_MISC_HELP____________________________________________________________  " )
+        print( "| Type 'Flood antibodies' to flood the screen with small antibodies     " )
+        print( "| Type 'help' to show the help tab (well you are watching it now ...)   " )
+        print( "______________________________________________________________________  " )
     elif inputVar == "Flood antibodies" or inputVar == "flood antibodies":
         TurtleCells.FloodAntibodies()
     else:
