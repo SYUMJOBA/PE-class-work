@@ -1,5 +1,6 @@
 #this library is a set of functions witch shortens a lot the turtle graphics and eases the development, instead of defining and using functions in controllabl scheme, functions will be called from here
 
+import MakeText
 import TurtleCells
 
 #This function gets called when tabbing is necessary
