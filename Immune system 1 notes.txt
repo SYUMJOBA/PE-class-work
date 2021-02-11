@@ -1,7 +1,11 @@
+#BEGINNING INTRODUCTION
+
 Every second of your life you are ander attack
 Bilions of bacteria, viruses and fungi are trying to make you theyr home
+So our body developed a super complex little army with guards, soldiers, wapon factories and intelligent soldiers that prevents us from dying
+So let's see what happens during an infection
 
-So our body developed a super complex little army with guards, soldiers, wapon factories and intelligent soldiers that prevents us from dying 
+#FINISHED INTRODUCTION
 
 for this video, let's assume that the immune system has 12 different jobs:
 	__________________________________________________________________________________

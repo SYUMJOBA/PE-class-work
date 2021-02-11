@@ -2,7 +2,8 @@
 import random
 import TurtleCells
 TurtleCells.SetBGColor("black")
-TurtleCells.setSpeed(0)
+
+TurtleCells.t.speed("fastest")
 
 TurtleCells.drawCell("Natural killer cell")
 TurtleCells.drawCell("Macrophage", pos= [200, 100])
@@ -24,3 +25,4 @@ TurtleCells.move(400, 400)
 TurtleCells.finish()
 
 input("press ENTER to exit")
+
