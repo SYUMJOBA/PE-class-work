@@ -10,5 +10,5 @@ Files are all in UTF8 encoding
 
 
 # how to run the project
-	Download all the files, then just double click on the "Controllable scheme.py" file, and then you should be able to run it.
-	NOTE: make sure you have python installed because this projecct is completely written in Python.
+Download all the files, then just double click on the "Controllable scheme.py" file, and then you should be able to run it.
+NOTE: make sure you have python installed because this projecct is completely written in Python.
