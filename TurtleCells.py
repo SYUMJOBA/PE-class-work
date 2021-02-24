@@ -12,7 +12,7 @@ def drawMacrophage(posX=0, posY=0, scale=1):
     t.pendown()
 
     #draw the first sector
-    t.color(Functions_colors.colours["Cause inflammation"]) #the way that the color is called is not yet definitive, the library with the included colours is yet to be made
+    t.color(Functions_colors.colours["Cause inflammation"]) #the way that the color is called is definitive
     t.begin_fill()
     t.forward(60*scale)
     t.left(90)
@@ -23,7 +23,7 @@ def drawMacrophage(posX=0, posY=0, scale=1):
 
     #draw the second sector
     t.setheading(120)
-    t.color(Functions_colors.colours["Activate other cells"]) #the way that the color is called is not yet definitive, the library with the included colours is yet to be made
+    t.color(Functions_colors.colours["Activate other cells"]) #the way that the color is called is definitive
     t.begin_fill()
     t.forward(60*scale)
     t.left(90)
@@ -34,7 +34,7 @@ def drawMacrophage(posX=0, posY=0, scale=1):
 
     #draw the third sector
     t.setheading(0)
-    t.color(Functions_colors.colours["Communicate"]) #the way that the color is called is not yet definitive, the library with the included colours is yet to be made
+    t.color(Functions_colors.colours["Communicate"]) #the way that the color is called is definitive
     t.begin_fill()
     t.setheading(-120)
     t.forward(60)
@@ -131,23 +131,29 @@ def SetBGColor(color):
     turtle.bgcolor(color)
 
 def FloodAntibodies():
-    # this function just floods the world with antibodies by creating many many lines
+    # this function just floods the world with antibodies by creating many many tiled lines, instead of drawing the circles wich would've costed a LOT of time
     ShouldGoLeft = True
     ShouldGoRight = False
 
+    #the pen is positioned into onto the first pixel
     t.penup()
     t.color(Functions_colors.colours["Mark/disable enemies 1"])
     t.setheading(0)
     t.goto(-400, 400)
+
+    #this snippet writes one line of antibodies
     for x in range(0, 30):
         for x in range(0, 60):
             t.pendown()
             t.forward(4)
             t.penup()
             t.forward(8)
+    
+    #this snippet makes the pen turn and it places it onto the next line's pixel
         t.setheading(-90)
         t.forward(9)
 
+        #this snippet makes the pen turn left or right after the end of every line
         if ShouldGoLeft:
             t.setheading(180)
             ShouldGoLeft = False

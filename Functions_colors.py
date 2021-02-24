@@ -54,7 +54,7 @@ cellsSizes = {"Macrophage" : 60,
     "Mast cell" : UnDoneYet,
     "Monocyte" : UnDoneYet,
     "Follicular dendritic cell" : 40,
-    "Dendritic cell" : 50, # why does the video show it defferently as [6, 9]???
+    "Dendritic cell" : 50, # why does the video show it defferently as [6, 9] (talking about the function colors) ???
     "Memory helper T cell" : UnDoneYet,
     "Bosophil" : UnDoneYet,
     "Eosinophil" : UnDoneYet,
