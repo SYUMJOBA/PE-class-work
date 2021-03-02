@@ -58,6 +58,19 @@ def TurtleUndo(Times = 1):
 
 #this function prints a cell on the screen according to the selected scale (at the opening of the program) and type (selected at the moment of printing). 
 #If there isn't any match with cell types it will just skip everything, print a message that explains the user that the cell type is invalid and exit the function
+
+#this function checks if a string value is convertable into an integer number, it will be very useful to avoid user mistakes when inputting values
+StringNums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+def IsStringConvenrtableToInt(word):
+    for char in word:
+        if char not in StringNums:
+            return False
+            break
+        else:
+            continue
+    return True
+
+
 def MakeCell(SelectedScale):
     Cell_Type = input("Please enter the Cell Type: ")
     if Cell_Type in TurtleCells.Functions_colors.cellsFunction:
@@ -75,23 +88,47 @@ def ListCellTypes():
     for key in TurtleCells.Functions_colors.cellsFunction:
         print(" " + key)
 
-def ListCellsWithFunctions():
-    print("_Cell_Listing_with_functions____________________________________________________________________________________________________________________________________|")
+def ListCellsWithFunctions(): #this function prints an entire listing of cells with theyr functions in a sheet
+    print("_Cell_Listing_with_functions____________________________________________________________________________________________________________________________________.")#this prints the top line
     print("________________________________________________________________________________________________________________________________________________________________|")
     count = 0
-    for key in TurtleCells.Functions_colors.cellsFunction:
+    for key in TurtleCells.Functions_colors.cellsFunction: #this loop prints the entire sheet by itself
         count += 1
-        print(str(count) + tab(len(str(count)) , 5) + "|" + key + tab(len(key), 30), end = "|")
-        for function in TurtleCells.Functions_colors.cellsFunction[key]:
-            print(function + tab(len(function), 30), end = "|")
-        print()
-        print(tab(ShouldSpace = 5) + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|")
+        print(str(count) + tab(len(str(count)) , 5) + "|" + key + tab(len(key), 30), end = "|") # this prints the name and the cell's index
 
-    print("     |__________________________________________________________________________________________________________________________________________________________|")
-    print()
+        functionsPrinted = 0
+        for function in TurtleCells.Functions_colors.cellsFunction[key]: # this prints the function associated to the cell
+            functionsPrinted += 1
+            print(function + tab(len(function), 30), end = "|")
+
+        if functionsPrinted < 5:
+            for time in range(1, 5 - functionsPrinted): # this completes the line, if the functions did not go through the full width if the sheet, so it's a "completition" function
+                print(tab(0, 30), end="|")
+
+
+        print() # newline
+
+        # this prints another sheet line, giving more space to the cell's name
+        print(tab(ShouldSpace = 5), end = "|")
+        for x in range(0, 5):
+            print(tab(ShouldSpace = 30), end = "|")
+
+        print() # newline
+        print(tab(ShouldSpace = 5) + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|" + tab(0, 30, "-") + "|")# this creates a separatory row for the sheet
+
+        #and the process repeats every single cell founf in the dictionary
+
+    print("     |__________________________________________________________________________________________________________________________________________________________|") # this prints the bottom line
+    
+    print() # final newline to detach the function's result from the rest of the program output
 
 def TurtleForward():
-    length = int(input("Enter how forward you want to go: "))
+    length = input("Enter how forward you want to go: ")
+    if IsStringConvenrtableToInt(length):
+        length = int(length)
+    else:
+        print("Please enter just an integer number for this")
+        return 0
     TurtleCells.t.forward(length)
 
 def turtleSetheading():

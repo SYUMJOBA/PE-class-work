@@ -11,6 +11,7 @@ scale = int(input("Please enter a certain scale, the default is 1: "))
 
 while True:
     x = input("Awaiting input: ")
+    IsCommandRecognized = True
 
     if x == "help" or x == "Help":
         menuFunctions.PrintHelpingMenu()
@@ -52,12 +53,17 @@ while True:
         menuFunctions.turtleTurnLeft()
     elif x == "Rigth" or x == "right":
         menuFunctions.turtleTurnRight()
-    elif x == "Misc" or "misc":
-        menuFunctions.DoRandomTurtleMisc()
     else:
-        print("Command typed appeared to be inexistent or unknown")
+        IsCommandRecognized = False
         print()
-    print()
+    
+    if x == "Misc" or x == "misc":
+        menuFunctions.DoRandomTurtleMisc()
+        IsCommandRecognized = True
+    
+    if IsCommandRecognized == False:
+        print("Command appeared to be unknown or inexistent, please report this if you consider this a bug")
+        print()
 
 
 #Ending and goodbying from the program, I'll put credits here
