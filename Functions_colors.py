@@ -19,7 +19,7 @@ colours = {"Communicate" : "#e1af5a",
 #here there are the cells functions all stored in a dictionary, it's not yet completed
 
 cellsFunction = {"Macrophage" : ["Kill enemies", "Cause inflammation", "Activate other cells", "Communicate"],
-    "Neutrofil" : ["Kill enemies", "Activate other cells"],
+    "Neutrophil" : ["Kill enemies", "Activate other cells"],
     "Natural killer cell" : ["Kill enemies" , "Communicate"],
     "Complement" : ["Mark/disable enemies 1"],
     "Mast cell" : [],
@@ -48,7 +48,7 @@ cellsFunction = {"Macrophage" : ["Kill enemies", "Cause inflammation", "Activate
 
 UnDoneYet = 60
 cellsSizes = {"Macrophage" : 60,
-    "Neutrofil" : 30,
+    "Neutrophil" : 30,
     "Natural killer cell" : 50,
     "Complement" : UnDoneYet,
     "Mast cell" : UnDoneYet,
